@@ -3,12 +3,12 @@
 
 # [_TEMPLATE_]
 
-## Schnelleinstieg
+## Quickstart
 
-- Füge openAPI Spezifikation auf Deutsch in _openapi.yml_ ein
-- Füge openAPI Spezifikation auf Englisch in _openapi_en.yml_ ein (oder lösche _openapi_en.yml_ )
-- Aktualisiere _index.html_ (Füge den API-Namen im Titel ein)
-- Aktualisiere _generator_config.yaml_ (Aktualisiere alle Angaben, die umgeben sind von <>)
-- Aktualisiere die URL in _CNAME_ sobald die API ihre eigene Subdomain hat
-- Ersetze README.md
-- Ersetze (oder lösche) README_en.md
+- Add openAPI spec in German to _openapi.yml_
+- Add openAPI spec in English to _openapi_en.yml_ (or remove _openapi_en.yml_ )
+- Update _index.html_ (insert the API-name in the title)
+- Update _generator_config.yaml_ (Update all values surrounded with <>)
+- Update the url in _CNAME_ once the api has its own subdomain
+- Replace the content of README.md with a German description of the API
+- Fill (or remove) README_en.md or add README-files in other languages.
