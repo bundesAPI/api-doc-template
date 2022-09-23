@@ -1,4 +1,14 @@
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - "openapi.yaml"
+      - "openapi_en.yaml"
+  pull_request:
+    paths:
+      - "openapi.yaml"
+      - "openapi_en.yaml"
+  workflow_dispatch:
+
 jobs:
     schemathesis:
       name: "Perform schemathesis checks"
