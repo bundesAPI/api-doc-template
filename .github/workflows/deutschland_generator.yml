@@ -25,8 +25,8 @@ jobs:
         uses: wirthual/deutschland-generator-action@latest
         with:
           openapi-file: ${{ github.workspace }}/openapi.yaml
-          commit-to-git: true
-          upload-to-pypi: true
+          commit-to-git: ${{ github.repository_owner == 'bundesAPI'}}
+          upload-to-pypi: ${{ github.repository_owner == 'bundesAPI'}}
           upload-to-testpypi: false
           pypi-token: ${{ secrets.PYPI_PRODUCTION }}
           testpypi-token: ${{ secrets.PYPI_TEST }}
