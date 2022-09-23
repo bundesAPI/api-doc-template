@@ -10,14 +10,14 @@ on:
   workflow_dispatch:
 
 jobs:
-    schemathesis:
-      name: "Perform schemathesis checks"
-      runs-on: ubuntu-latest
-      steps:
+  schemathesis:
+    name: "Perform schemathesis checks"
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: "3.8"
 
       - run: pip install schemathesis
 
@@ -27,4 +27,3 @@ jobs:
           cmd: echo "base_url=$(yq -r .servers[].url openapi.yaml)" >> $GITHUB_ENV
 
       - run: schemathesis run ./openapi.yaml --base-url "${{ env.base_url }}" --checks all
-
