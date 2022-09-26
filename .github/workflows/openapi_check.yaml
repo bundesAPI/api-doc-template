@@ -1,12 +1,10 @@
 on:
   push:
     paths:
-      - "openapi.yaml"
-      - "openapi_en.yaml"
+      - "openapi*.yaml"
   pull_request:
     paths:
-      - "openapi.yaml"
-      - "openapi_en.yaml"
+      - "openapi*.yaml"
 
 jobs:
   openapi_check:
