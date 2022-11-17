@@ -2,7 +2,8 @@ openapi: "3.0.0"
 info:
   description: "API Description"
   version: "1.0.0"
-  title: "Amtsname: API Name"
+  title: "API Name"
+  x-office: "Amtsname"
   contact:
     name: Responsible authority
     email: behoerde@example.com
